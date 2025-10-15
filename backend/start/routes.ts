@@ -1,0 +1,5 @@
+import 'App/Modules/CreateUser/routes'
+import 'App/Modules/Extract/routes'
+import 'App/Modules/Form/routes'
+import 'App/Modules/LostPassword/routes'
+import 'App/Modules/User/routes'

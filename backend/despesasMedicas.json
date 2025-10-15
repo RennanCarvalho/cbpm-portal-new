@@ -1,0 +1,922 @@
+[
+  {
+    "DataAtendimento": "2018-06-20T00:00:00.000Z",
+    "Fatura": "009QI9",
+    "NomePaciente": "BRIAN LUIZ SILVA FERRAZ",
+    "Procedimento": "COAGULOGRAMA TS, TC, PROVA DO LACO",
+    "Quantidade": 1,
+    "Valor": 12.6,
+    "PgCBPM": 6.3,
+    "PgContribuinte": 6.3
+  },
+  {
+    "DataAtendimento": "2018-06-20T00:00:00.000Z",
+    "Fatura": "009QI9",
+    "NomePaciente": "BRIAN LUIZ SILVA FERRAZ",
+    "Procedimento": "HEMOGRAMA COMPLETO  ERITROGRAMA",
+    "Quantidade": 1,
+    "Valor": 10.8,
+    "PgCBPM": 5.4,
+    "PgContribuinte": 5.4
+  },
+  {
+    "DataAtendimento": "2016-05-02T00:00:00.000Z",
+    "Fatura": "009IRE",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "USG OBSTETRICA COM DOPPLER CONVENCI",
+    "Quantidade": 1,
+    "Valor": 75,
+    "PgCBPM": 37.5,
+    "PgContribuinte": 37.5
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009IRZ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA (PRE-NATAL)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-06-22T00:00:00.000Z",
+    "Fatura": "009IUC",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "CONSULTA (GINECOLOGIA E OBSTETRÃ?CI",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2015-12-28T00:00:00.000Z",
+    "Fatura": "009HNE",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (GINECOLO",
+    "Quantidade": 1,
+    "Valor": 100.88,
+    "PgCBPM": 50.44,
+    "PgContribuinte": 50.44
+  },
+  {
+    "DataAtendimento": "2015-12-28T00:00:00.000Z",
+    "Fatura": "009HNE",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "USG OBSTETRICA",
+    "Quantidade": 1,
+    "Valor": 54.84,
+    "PgCBPM": 27.42,
+    "PgContribuinte": 27.42
+  },
+  {
+    "DataAtendimento": "2016-01-20T00:00:00.000Z",
+    "Fatura": "009HQV",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "HEMOGRAMA COMPLETO ( ERITROGRAMA +",
+    "Quantidade": 1,
+    "Valor": 10.8,
+    "PgCBPM": 5.4,
+    "PgContribuinte": 5.4
+  },
+  {
+    "DataAtendimento": "2016-01-20T00:00:00.000Z",
+    "Fatura": "009HQV",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CITOMEGALOVIRUS IGM, ELISA",
+    "Quantidade": 2,
+    "Valor": 72,
+    "PgCBPM": 36,
+    "PgContribuinte": 36
+  },
+  {
+    "DataAtendimento": "2016-01-20T00:00:00.000Z",
+    "Fatura": "009HRA",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA (PRE-NATAL)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-01-20T00:00:00.000Z",
+    "Fatura": "009HTC",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (GINECOLO",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-01-20T00:00:00.000Z",
+    "Fatura": "009HQV",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "RUBEOLA-ANTICORPOS IGG, EIE PARA",
+    "Quantidade": 1,
+    "Valor": 14.4,
+    "PgCBPM": 7.2,
+    "PgContribuinte": 7.2
+  },
+  {
+    "DataAtendimento": "2016-01-20T00:00:00.000Z",
+    "Fatura": "009HTC",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "USG OBSTETRICA",
+    "Quantidade": 1,
+    "Valor": 54.84,
+    "PgCBPM": 27.42,
+    "PgContribuinte": 27.42
+  },
+  {
+    "DataAtendimento": "2016-01-20T00:00:00.000Z",
+    "Fatura": "009HQV",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "RUBEOLA-ANTICORPOS IGM,EIE PARA",
+    "Quantidade": 1,
+    "Valor": 43.2,
+    "PgCBPM": 21.6,
+    "PgContribuinte": 21.6
+  },
+  {
+    "DataAtendimento": "2016-08-04T00:00:00.000Z",
+    "Fatura": "009JFZ",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "CONSULTA (GINECOLOGIA E OBSTETRÃ?CI",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-07-24T00:00:00.000Z",
+    "Fatura": "009JFL",
+    "NomePaciente": "BRIAN LUIZ SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (PEDIATRI",
+    "Quantidade": 1,
+    "Valor": 100.88,
+    "PgCBPM": 50.44,
+    "PgContribuinte": 50.44
+  },
+  {
+    "DataAtendimento": "2016-07-24T00:00:00.000Z",
+    "Fatura": "009JFL",
+    "NomePaciente": "BRIAN LUIZ SILVA FERRAZ",
+    "Procedimento": "BILIRRUBINA TOTAL E FRACOES",
+    "Quantidade": 1,
+    "Valor": 5.4,
+    "PgCBPM": 2.7,
+    "PgContribuinte": 2.7
+  },
+  {
+    "DataAtendimento": "2016-07-24T00:00:00.000Z",
+    "Fatura": "009JFL",
+    "NomePaciente": "BRIAN LUIZ SILVA FERRAZ",
+    "Procedimento": "USG APARELHO URINARIO (RINS E BEXIG",
+    "Quantidade": 1,
+    "Valor": 88.08,
+    "PgCBPM": 44.04,
+    "PgContribuinte": 44.04
+  },
+  {
+    "DataAtendimento": "2016-03-23T00:00:00.000Z",
+    "Fatura": "009I79",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "DOPPLERFLUXOMETRIA",
+    "Quantidade": 1,
+    "Valor": 108,
+    "PgCBPM": 54,
+    "PgContribuinte": 54
+  },
+  {
+    "DataAtendimento": "2016-03-23T00:00:00.000Z",
+    "Fatura": "009I79",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "USG MORFOLÃOGICO",
+    "Quantidade": 1,
+    "Valor": 120,
+    "PgCBPM": 60,
+    "PgContribuinte": 60
+  },
+  {
+    "DataAtendimento": "2016-04-13T00:00:00.000Z",
+    "Fatura": "009I7O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA (PRE-NATAL)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2015-12-17T00:00:00.000Z",
+    "Fatura": "009HED",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "CONSULTA (DERMATOLOGIA)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-10-14T00:00:00.000Z",
+    "Fatura": "009JXT",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA (GINECOLOGIA E OBSTETRÃ?CI",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-10-09T00:00:00.000Z",
+    "Fatura": "009K52",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (PEDIATRI",
+    "Quantidade": 1,
+    "Valor": 100.88,
+    "PgCBPM": 50.44,
+    "PgContribuinte": 50.44
+  },
+  {
+    "DataAtendimento": "2016-10-09T00:00:00.000Z",
+    "Fatura": "009K52",
+    "NomePaciente": "BRIAN LUIZ SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (PEDIATRI",
+    "Quantidade": 1,
+    "Valor": 100.88,
+    "PgCBPM": 50.44,
+    "PgContribuinte": 50.44
+  },
+  {
+    "DataAtendimento": "2016-04-06T00:00:00.000Z",
+    "Fatura": "009IFE",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "ECODOPPLER FETAL COM MAPEAMENTO DE",
+    "Quantidade": 1,
+    "Valor": 288,
+    "PgCBPM": 144,
+    "PgContribuinte": 144
+  },
+  {
+    "DataAtendimento": "2016-04-13T00:00:00.000Z",
+    "Fatura": "009IIX",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "ROTINA DE URINA (CARACTERES FISICOS",
+    "Quantidade": 1,
+    "Valor": 5.04,
+    "PgCBPM": 2.52,
+    "PgContribuinte": 2.52
+  },
+  {
+    "DataAtendimento": "2016-04-13T00:00:00.000Z",
+    "Fatura": "009IIX",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "URINA COM CONTAGEM DE COLONIAS, CUL",
+    "Quantidade": 1,
+    "Valor": 10.8,
+    "PgCBPM": 5.4,
+    "PgContribuinte": 5.4
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "EQUIPO MACROGOTAS SEM RESPIRO E COM",
+    "Quantidade": 1,
+    "Valor": 60.65,
+    "PgCBPM": 60.65,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "GLICOSE 5% 250ML BOLSA",
+    "Quantidade": 1,
+    "Valor": 3.79,
+    "PgCBPM": 3.79,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "STOPPER BANDAGEM ADESIVA HIPO-ALERG",
+    "Quantidade": 1,
+    "Valor": 0.09,
+    "PgCBPM": 0.09,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "LUVA P/PROCEDIMENTO MEDICO NAO ESTE",
+    "Quantidade": 4,
+    "Valor": 1.84,
+    "PgCBPM": 1.84,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "AGULHA P/ASPIRACAO 25X12MM",
+    "Quantidade": 1,
+    "Valor": 1.09,
+    "PgCBPM": 1.09,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "BUSCOPAN COMPOSTO 20MG/5ML AMP",
+    "Quantidade": 1,
+    "Valor": 4.37,
+    "PgCBPM": 4.37,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "ROTINA DE URINA (CARACTERES FISICOS",
+    "Quantidade": 1,
+    "Valor": 5.04,
+    "PgCBPM": 2.52,
+    "PgContribuinte": 2.52
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (GINECOLO",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "SERINGA DESC.10ML BICO LOCK S/AG.",
+    "Quantidade": 1,
+    "Valor": 2,
+    "PgCBPM": 2,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "INSTALAÃCAO DE SORO (SESSAO)",
+    "Quantidade": 1,
+    "Valor": 18.18,
+    "PgCBPM": 18.18,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "FITA CIRURGICA OU MICROPORE BRANCO",
+    "Quantidade": 20,
+    "Valor": 0.4,
+    "PgCBPM": 0.4,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CATETER INTRAVENOSO RADIOPACO 22G C",
+    "Quantidade": 1,
+    "Valor": 51.5,
+    "PgCBPM": 51.5,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "GAZE EMBEBIDA EM ALCOOL(ALCOHOL SWA",
+    "Quantidade": 1,
+    "Valor": 0.99,
+    "PgCBPM": 0.99,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-04-29T00:00:00.000Z",
+    "Fatura": "009ILU",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "SALA DE OBSERVAÃCAO PA (PERÃ?ODO DE",
+    "Quantidade": 1,
+    "Valor": 49.22,
+    "PgCBPM": 49.22,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-05-11T00:00:00.000Z",
+    "Fatura": "009IGJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA (PRE-NATAL)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-01-06T00:00:00.000Z",
+    "Fatura": "009HH4",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "CONSULTA (GINECOLOGIA E OBSTETRÃ?CI",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2015-12-14T00:00:00.000Z",
+    "Fatura": "009HGH",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "COMPRESSA DE GAZE 7,5CM X 7,5CM COM",
+    "Quantidade": 5,
+    "Valor": 0.8,
+    "PgCBPM": 0.8,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2015-12-14T00:00:00.000Z",
+    "Fatura": "009HGH",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "SONDA URETRAL DE PLASTICO N.08",
+    "Quantidade": 1,
+    "Valor": 8.37,
+    "PgCBPM": 8.37,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2015-12-14T00:00:00.000Z",
+    "Fatura": "009HGH",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "SERINGA DESCARTAVEL S/AGULHA 20ML C",
+    "Quantidade": 1,
+    "Valor": 5.89,
+    "PgCBPM": 5.89,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2015-12-14T00:00:00.000Z",
+    "Fatura": "009HGH",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "LUVA P/PROCEDIMENTO MEDICO NAO ESTE",
+    "Quantidade": 2,
+    "Valor": 0.92,
+    "PgCBPM": 0.92,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2015-12-14T00:00:00.000Z",
+    "Fatura": "009HGH",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "CONSULTA (OTORRINOLARINGOLOGIA)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2015-12-14T00:00:00.000Z",
+    "Fatura": "009HGH",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "CERUME - REMOCAO",
+    "Quantidade": 1,
+    "Valor": 9,
+    "PgCBPM": 9,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "ANTICORPO HTLV-III (ANTI-HIV) (EIE",
+    "Quantidade": 2,
+    "Valor": 108,
+    "PgCBPM": 54,
+    "PgContribuinte": 54
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "HEPATITE C - ANTI-HVC",
+    "Quantidade": 1,
+    "Valor": 72,
+    "PgCBPM": 36,
+    "PgContribuinte": 36
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "URINA COM CONTAGEM DE COLONIAS, CUL",
+    "Quantidade": 1,
+    "Valor": 10.8,
+    "PgCBPM": 5.4,
+    "PgContribuinte": 5.4
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CULTURAS EM GERAL COMPREENDENDO CIT",
+    "Quantidade": 2,
+    "Valor": 25.2,
+    "PgCBPM": 12.6,
+    "PgContribuinte": 12.6
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "TOXOPLASMOSE (IGC OU IGM), EIE PARA",
+    "Quantidade": 2,
+    "Valor": 57.6,
+    "PgCBPM": 28.8,
+    "PgContribuinte": 28.8
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "ROTINA DE URINA (CARACTERES FISICOS",
+    "Quantidade": 1,
+    "Valor": 5.04,
+    "PgCBPM": 2.52,
+    "PgContribuinte": 2.52
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "ANTIGENO AUSTRALIA (HBS AG)RIE OU E",
+    "Quantidade": 1,
+    "Valor": 25.2,
+    "PgCBPM": 12.6,
+    "PgContribuinte": 12.6
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009J1O",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "SIFILIS (VDRL QUANTITATIVOS E FTA-A",
+    "Quantidade": 1,
+    "Valor": 12.6,
+    "PgCBPM": 6.3,
+    "PgContribuinte": 6.3
+  },
+  {
+    "DataAtendimento": "2016-06-10T00:00:00.000Z",
+    "Fatura": "009J3N",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "USG OBSTETRICA COM DOPPLER CONVENCI",
+    "Quantidade": 1,
+    "Valor": 75,
+    "PgCBPM": 37.5,
+    "PgContribuinte": 37.5
+  },
+  {
+    "DataAtendimento": "2016-07-13T00:00:00.000Z",
+    "Fatura": "009J01",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA (PRE-NATAL)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-06-08T00:00:00.000Z",
+    "Fatura": "009IZM",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (GINECOLO",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "TIREOESTIMULANTE (TSH), HORMONIO (R",
+    "Quantidade": 1,
+    "Valor": 30.6,
+    "PgCBPM": 15.3,
+    "PgContribuinte": 15.3
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "HEMOGRAMA COMPLETO ( ERITROGRAMA +",
+    "Quantidade": 1,
+    "Valor": 10.8,
+    "PgCBPM": 5.4,
+    "PgContribuinte": 5.4
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J3G",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "USG PELVICA GINECOLOGICA COM DOPPLE",
+    "Quantidade": 1,
+    "Valor": 80.04,
+    "PgCBPM": 40.02,
+    "PgContribuinte": 40.02
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "MARCADORES TUMORAIS (CA 19.9, CA 12",
+    "Quantidade": 1,
+    "Valor": 72,
+    "PgCBPM": 36,
+    "PgContribuinte": 36
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "CA 125 - EIE",
+    "Quantidade": 1,
+    "Valor": 72,
+    "PgCBPM": 36,
+    "PgContribuinte": 36
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "TEMPO DE PROTROMBINA",
+    "Quantidade": 1,
+    "Valor": 5.4,
+    "PgCBPM": 2.7,
+    "PgContribuinte": 2.7
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "TEMPO DE TROMBOPLASTINA PARCIAL ATI",
+    "Quantidade": 1,
+    "Valor": 5.4,
+    "PgCBPM": 2.7,
+    "PgContribuinte": 2.7
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "TIROXINA LIVRE (RIE)",
+    "Quantidade": 1,
+    "Valor": 30.6,
+    "PgCBPM": 15.3,
+    "PgContribuinte": 15.3
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "GLICOSE",
+    "Quantidade": 1,
+    "Valor": 5.04,
+    "PgCBPM": 2.52,
+    "PgContribuinte": 2.52
+  },
+  {
+    "DataAtendimento": "2016-06-24T00:00:00.000Z",
+    "Fatura": "009J22",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "ANTIGENO CARCINOEMBRIOGENICO (CEA)",
+    "Quantidade": 1,
+    "Valor": 55.8,
+    "PgCBPM": 27.9,
+    "PgContribuinte": 27.9
+  },
+  {
+    "DataAtendimento": "2016-01-17T00:00:00.000Z",
+    "Fatura": "009HX0",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "URINA COM CONTAGEM DE COLONIAS, CUL",
+    "Quantidade": 1,
+    "Valor": 10.8,
+    "PgCBPM": 5.4,
+    "PgContribuinte": 5.4
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CLORETO DE SÃODIO 0,9% 100ML (BOLSA",
+    "Quantidade": 1,
+    "Valor": 6.14,
+    "PgCBPM": 6.14,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "AGULHA P/ASPIRACAO 25X12MM",
+    "Quantidade": 1,
+    "Valor": 0.84,
+    "PgCBPM": 0.84,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "FITA CIRURGICA OU MICROPORE BRANCO",
+    "Quantidade": 20,
+    "Valor": 0.4,
+    "PgCBPM": 0.4,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CATETER INTRAVENOSO RADIOPACO 22G C",
+    "Quantidade": 1,
+    "Valor": 51.5,
+    "PgCBPM": 51.5,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "GAZE EMBEBIDA EM ALCOOL(ALCOHOL SWA",
+    "Quantidade": 1,
+    "Valor": 0.99,
+    "PgCBPM": 0.99,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "STOPPER BANDAGEM ADESIVA HIPO-ALERG",
+    "Quantidade": 1,
+    "Valor": 0.09,
+    "PgCBPM": 0.09,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "BUSCOPAN COMPOSTO 20MG/5ML AMP",
+    "Quantidade": 1,
+    "Valor": 4.37,
+    "PgCBPM": 4.37,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "EQUIPO MACROGOTAS SEM RESPIRO E COM",
+    "Quantidade": 1,
+    "Valor": 60.65,
+    "PgCBPM": 60.65,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "LUVA P/PROCEDIMENTO MEDICO NAO ESTE",
+    "Quantidade": 4,
+    "Valor": 1.84,
+    "PgCBPM": 1.84,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "SERINGA S/AG.05ML LUER-LOK PLASTIPA",
+    "Quantidade": 1,
+    "Valor": 1.55,
+    "PgCBPM": 1.55,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (GINECOLO",
+    "Quantidade": 1,
+    "Valor": 100.88,
+    "PgCBPM": 50.44,
+    "PgContribuinte": 50.44
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "INSTALAÃCAO DE SORO (SESSAO)",
+    "Quantidade": 1,
+    "Valor": 18.18,
+    "PgCBPM": 18.18,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "SALA DE OBSERVAÃCAO PA (PERÃ?ODO DE",
+    "Quantidade": 1,
+    "Valor": 49.22,
+    "PgCBPM": 49.22,
+    "PgContribuinte": 0
+  },
+  {
+    "DataAtendimento": "2016-02-07T00:00:00.000Z",
+    "Fatura": "009HYJ",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "ROTINA DE URINA (CARACTERES FISICOS",
+    "Quantidade": 1,
+    "Valor": 5.04,
+    "PgCBPM": 2.52,
+    "PgContribuinte": 2.52
+  },
+  {
+    "DataAtendimento": "2016-02-17T00:00:00.000Z",
+    "Fatura": "009I38",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (GINECOLO",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-02-17T00:00:00.000Z",
+    "Fatura": "009I38",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "USG OBSTETRICA",
+    "Quantidade": 1,
+    "Valor": 54.84,
+    "PgCBPM": 27.42,
+    "PgContribuinte": 27.42
+  },
+  {
+    "DataAtendimento": "2016-03-16T00:00:00.000Z",
+    "Fatura": "009HZ6",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA (PRE-NATAL)",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2016-02-15T00:00:00.000Z",
+    "Fatura": "009HY2",
+    "NomePaciente": "DOMINIQUE SILVA DE BRITO",
+    "Procedimento": "USG PELVICA (GINECOLOGICA)",
+    "Quantidade": 1,
+    "Valor": 42.24,
+    "PgCBPM": 21.12,
+    "PgContribuinte": 21.12
+  },
+  {
+    "DataAtendimento": "2016-02-17T00:00:00.000Z",
+    "Fatura": "009I38",
+    "NomePaciente": "WENDELL SANTOS DA SILVA",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (PEDIATRI",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  },
+  {
+    "DataAtendimento": "2015-10-22T00:00:00.000Z",
+    "Fatura": "009H47",
+    "NomePaciente": "ELAINE CRISTINA SILVA FERRAZ",
+    "Procedimento": "CONSULTA - PRONTO SOCORRO (CLÃ?NICA",
+    "Quantidade": 1,
+    "Valor": 77.6,
+    "PgCBPM": 38.8,
+    "PgContribuinte": 38.8
+  }
+]
