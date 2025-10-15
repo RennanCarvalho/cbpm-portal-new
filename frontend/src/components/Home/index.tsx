@@ -1,22 +1,13 @@
-import { VStack } from '@chakra-ui/react';
-import Header from '../Header';
-import { CarouselComponent } from './Carousel';
-import WarnPopup from '../WarnPopup';
-import { Footer } from './Footer';
-import { MainService } from './MainServices';
-import { News } from './News';
+// pages/index.tsx
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
-const HomeComponente = () => {
-  return (
-    <VStack spacing="24px">
-      <Header />
-      {/* <WarnPopup /> */}
-      <CarouselComponent />
-      <MainService />
-      <News />
-      <Footer />
-    </VStack>
-  );
-};
+export default function Index() {
+  const router = useRouter()
 
-export default HomeComponente;
+  useEffect(() => {
+    router.replace('/login')
+  }, [router])
+
+  return null
+}

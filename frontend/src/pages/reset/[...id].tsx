@@ -17,7 +17,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import Header from '../../components/Header';
 import { setupAPIClient } from '../../services/setupAPIClient';
 
 // type Reset = {
@@ -79,7 +78,6 @@ const ResetPassword = () => {
 
   return (
     <>
-      <Header />
       <Container
         maxW="max"
         centerContent

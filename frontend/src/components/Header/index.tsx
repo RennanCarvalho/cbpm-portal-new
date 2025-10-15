@@ -12,13 +12,7 @@ import {
 import { Fragment } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { useSidebarDrawer } from '../../contexts/SidebarDrawerContext';
-import { Links } from './Links';
-import { LinksToggle } from './LinksToggle';
 import { Login } from './Login';
-import { Logo } from './Logo';
-import { LogosLink } from './LogosLink';
-import { Search } from './Search';
-import { SidebarNav } from './SidebarNav';
 
 
 
@@ -40,11 +34,7 @@ const Header = () => {
             justify={'space-between'}
             align="center"
           >
-            <Logo />
-            <Links />
             <HStack>
-              <LinksToggle />
-              <LogosLink />
               <Login />
             </HStack>
           </HStack>
@@ -59,10 +49,6 @@ const Header = () => {
                 onClick={onOpen}
               />
             )}
-
-            <SidebarNav />
-            
-            <Search />
           </Flex>
         </VStack>
       </Container>

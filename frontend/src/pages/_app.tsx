@@ -9,7 +9,6 @@ import React, { useEffect } from 'react';
 import * as gtag from '../lib/gtag';
 import { useRouter } from 'next/router';
 import { VLibras } from '../components/Header/VLibras';
-import { MainContentLink } from '../components/Header/MainContentLink';
 
 if (typeof window === 'undefined') React.useLayoutEffect = React.useEffect;
 
@@ -32,13 +31,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={theme}>
-      <MainContentLink />
       <SidebarDrawerProvider>
         <PrivacyPolicy />
         <VLibras />
         <Component {...pageProps}/>
       </SidebarDrawerProvider>
-      
     </ChakraProvider>
   );
 }
