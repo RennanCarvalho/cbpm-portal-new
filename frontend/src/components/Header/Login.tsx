@@ -32,7 +32,7 @@ export const Login = () => {
       {/* Usuário não está logado e tamanho de tela "base" */}
       {!isLogged && !isWideVersion && (
         <HStack>
-          <Link href="/login">
+          <Link href={`${process.env.URL_PUBLIC_AREA}`}>
             <Icon as={FaUser} fontSize="20px" color="blue.default" mt="6px" />
           </Link>
         </HStack>
@@ -42,8 +42,8 @@ export const Login = () => {
       {!isLogged && isWideVersion && (
         <HStack>
           <Icon as={FaUser} fontSize="20px" color="blue.default" />
-          <Link href="/login" whiteSpace="nowrap">
-            Área de Serviço do Usuário
+          <Link href={`${process.env.URL_PUBLIC_AREA}`} whiteSpace="nowrap">
+            Voltar para Área Pública
           </Link>
         </HStack>
       )}
