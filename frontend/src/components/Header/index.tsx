@@ -7,7 +7,8 @@ import {
   IconButton,
   useBreakpointValue,
   VStack,
-  Link
+  Link,
+  Img
 } from '@chakra-ui/react';
 import { Fragment } from 'react';
 import { FaBars } from 'react-icons/fa';
@@ -27,22 +28,14 @@ const Header = () => {
   return (
     <Fragment>
       <Container maxW="container.xl" centerContent>
-        <VStack spacing="2rem" w="100%">
-          <HStack
-            w="100%"
-            spacing="20px"
-            justify={'space-between'}
-            align="center"
-          >
-            <HStack>
-              <Login />
-            </HStack>
-          </HStack>
-        </VStack>
+        <HStack width="100%" justifyContent={"space-between"}>
+          <Img src='/'></Img>
+          <Login />
+        </HStack>
       </Container>
-      <Divider id="principal" mt="24px" />
     </Fragment>
   );
 };
 
 export default Header;
+
