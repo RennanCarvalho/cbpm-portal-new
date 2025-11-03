@@ -38,18 +38,6 @@ const Header = () => {
               <Login />
             </HStack>
           </HStack>
-
-          <Flex justify="space-between" w="100%">
-            {!isWideVersion && (
-              <Button
-                as={IconButton}
-                aria-label="Abre o menu de navegação"
-                icon={<FaBars />}
-                variant="outline"
-                onClick={onOpen}
-              />
-            )}
-          </Flex>
         </VStack>
       </Container>
       <Divider id="principal" mt="24px" />
