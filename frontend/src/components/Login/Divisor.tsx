@@ -1,13 +1,32 @@
-import { Box, Button, Flex, Img, Text, VStack } from '@chakra-ui/react';
-import Link from '../Link';
+import { Box, Flex, Text } from '@chakra-ui/react';
 
-export const Divisor = ({ texto }: { texto: string }) => {
+interface DivisorProps {
+  texto: string;
+  cor?: string;
+  isHorizontal?: boolean;
+}
+
+export const Divisor = ({
+  texto,
+  cor = 'gray',
+  isHorizontal = false,
+}: DivisorProps) => {
+  const direction = isHorizontal ? 'row' : 'column';
+  const borderProp = isHorizontal ? 'borderBottom' : 'borderLeft';
+
   return (
-    <Flex flexDirection={'column'} width={'100px'} align={'center'}color='grey'>
-        <Box borderLeft={'2px'} flex="1"></Box>
-        <Text>{texto}</Text>
-        <Box borderLeft={'2px'} flex="1" ></Box>
+    <Flex
+      flexDirection={direction}
+      align="center"
+      justify="center"
+      color="gray"
+      gap="10px"
+      minWidth={isHorizontal ? '500px' : '100px'}
+      minHeight={isHorizontal ? '100px' : '100%'}
+    >
+      <Box {...{ [borderProp]: `2px solid ${cor}` }} flex="1" />
+      <Text>{texto}</Text>
+      <Box {...{ [borderProp]: `2px solid ${cor}` }} flex="1" />
     </Flex>
-    
   );
 };

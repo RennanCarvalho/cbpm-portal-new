@@ -8,14 +8,13 @@ import {
   useBreakpointValue,
   VStack,
   Link,
-  Img
+  Text,
+  Img,
 } from '@chakra-ui/react';
 import { Fragment } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { useSidebarDrawer } from '../../contexts/SidebarDrawerContext';
 import { Login } from './Login';
-
-
 
 const Header = () => {
   const { onOpen } = useSidebarDrawer();
@@ -28,14 +27,32 @@ const Header = () => {
   return (
     <Fragment>
       <Container maxW="container.xl" centerContent>
-        <HStack width="100%" justifyContent={"space-between"}>
-          <Img src='/'></Img>
-          <Login />
+        <HStack
+          w={'100%'}
+          height={'196px'}
+          p={'30px 24px'}
+          justifyContent={'space-between'}
+        >
+          <HStack>
+            <Link
+              href={`${
+                process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'
+              }`}
+            >
+              <Img src="/logos/logo-main.png" h={'136px'} />
+            </Link>
+            <Text>
+              Caixa Beneficente da
+              <br />
+              <strong>Polícia Militar do Estado de São Paulo</strong>
+            </Text>
+          </HStack>
+          <Img src="/logos/logo-gov.png" />
         </HStack>
+        <Login />
       </Container>
     </Fragment>
   );
 };
 
 export default Header;
-

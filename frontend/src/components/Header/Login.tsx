@@ -1,9 +1,17 @@
-import { HStack, Icon, useBreakpointValue } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  HStack,
+  Icon,
+  useBreakpointValue,
+  VStack,
+} from '@chakra-ui/react';
 import { useRouter } from 'next/dist/client/router';
 import { destroyCookie, parseCookies } from 'nookies';
 import { useEffect, useState } from 'react';
-import { FaUser } from 'react-icons/fa';
+import { FaHome, FaUser } from 'react-icons/fa';
 import Link from '../Link';
+import { Divisor } from '../Login/Divisor';
 
 export const Login = () => {
   const { asPath } = useRouter();
@@ -28,42 +36,78 @@ export const Login = () => {
   }, [isLogged, asPath]);
 
   return (
-    <HStack>
-      {/* Usuário não está logado e tamanho de tela "base" */}
-      {!isLogged && !isWideVersion && (
-        <HStack>
-          <Link href={`${process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'}`}>
-            <Icon as={FaUser} fontSize="20px" color="blue.default" mt="6px" />
-          </Link>
-        </HStack>
-      )}
+    <HStack w={'100%'} justifyContent={'center'}>
+      <VStack w="100%">
+        <Divisor texto="Portal do Cliente" isHorizontal={true} />
 
-      {/* Usuário não está logado e tamanho de tela acima de "base" */}
-      {!isLogged && isWideVersion && (
-        <HStack>
-          <Icon as={FaUser} fontSize="20px" color="blue.default" />
-          <Link href={`${process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'}`} whiteSpace="nowrap">
-            Voltar para Área Pública
-          </Link>
-        </HStack>
-      )}
+        {!isLogged && !isWideVersion && (
+          <HStack>
+            <Link
+              href={`${
+                process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'
+              }`}
+            >
+              <Icon as={FaHome} fontSize="20px" color="blue.default" mt="6px" />
+            </Link>
+          </HStack>
+        )}
 
-      {/* Usuário está logado e tamanho de tela "base" */}
-      {isLogged && !isWideVersion && (
-        <Link href="/area-restrita/servicos">
-          <Icon as={FaUser} fontSize="20px" color="blue.default" mt="6px" />
-        </Link>
-      )}
+        {!isLogged && isWideVersion && (
+          <HStack h={'71px'}>
+            <Link
+              href={`${
+                process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'
+              }`}
+              whiteSpace="nowrap"
+            >
+            <Icon as={FaHome} fontSize="20px" color="blue.default" /> Voltar para Área Pública
+            </Link>
+          </HStack>
+        )}
 
-      {/* Usuário está logado e tamanho de tela acima de "base" */}
-      {isLogged && isWideVersion && (
-        <HStack>
-          <Icon as={FaUser} fontSize="20px" color="blue.default" />
-          <Link href="/area-restrita/servicos" whiteSpace="nowrap">
-            {isLogged}
-          </Link>
-        </HStack>
-      )}
+        {isLogged && !isWideVersion && (
+          <HStack>
+            <Link href="/area-restrita/servicos">
+              <Icon as={FaUser} fontSize="20px" color="blue.default" mt="6px" />
+            </Link>
+            <Link
+              href={`${
+                process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'
+              }`}
+              whiteSpace="nowrap"
+            >
+              <Icon as={FaHome} fontSize="20px" color="blue.default" mt="6px" />
+            </Link>
+          </HStack>
+        )}
+
+        {isLogged && isWideVersion && (
+          <HStack gap={'100px'}>
+            <HStack>
+              <Link href="/area-restrita/servicos" whiteSpace="nowrap">
+                <Icon as={FaUser} fontSize="17px" color="blue.default" />{' '}
+                {isLogged}
+              </Link>
+            </HStack>
+            <HStack>
+              <Link
+                href={`${
+                  process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'
+                }`}
+                whiteSpace="nowrap"
+              >
+                <Icon
+                  as={FaHome}
+                  fontSize="20px"
+                  color="blue.default"
+                  mt="6px"
+                />{' '}
+                Voltar para Área Pública
+              </Link>
+            </HStack>
+          </HStack>
+        )}
+      </VStack>
     </HStack>
   );
 };
