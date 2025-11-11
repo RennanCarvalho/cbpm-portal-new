@@ -30,7 +30,7 @@ const Header = () => {
         <HStack
           w={'100%'}
           height={'196px'}
-          p={'30px 24px'}
+          p={'30px 52px'}
           justifyContent={'space-between'}
         >
           <HStack>
@@ -41,13 +41,13 @@ const Header = () => {
             >
               <Img src="/logos/logo-main.png" h={'136px'} />
             </Link>
-            <Text>
+            <Text paddingLeft={'22px'} fontFamily={'Rawline, sans-serif'} m='0' color={'#333'}>
               Caixa Beneficente da
               <br />
               <strong>Polícia Militar do Estado de São Paulo</strong>
             </Text>
           </HStack>
-          <Img src="/logos/logo-gov.png" />
+          <Img src="/logos/logo-gov.png" padding='0 20px'/>
         </HStack>
         <Login />
       </Container>
