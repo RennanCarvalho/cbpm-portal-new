@@ -14,7 +14,7 @@ import {
   UnorderedList,
   ListItem,
   Heading,
-  Grid
+  Grid,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
@@ -26,7 +26,7 @@ import { generateTodayDate } from '../../utils/generateTodayDate';
 import { printDocument } from '../../utils/printDocument';
 import FormHeader from './FormHeader';
 import cep from 'cep-promise';
-import InputMask from 'react-input-mask'
+import InputMask from 'react-input-mask';
 import { FormTable } from './Table/FormTable';
 
 type CEP = {
@@ -113,22 +113,21 @@ const InclusionOrUpdatePensionerData = (props: UserProps) => {
     //@ts-ignore
     file.push(fileEvent);
     //@ts-ignore
-    setDisplayFileName([...displayFileName, file[file.length - 1].name])
-    console.log(file)
-    console.log(displayFileName)
+    setDisplayFileName([...displayFileName, file[file.length - 1].name]);
+    console.log(file);
+    console.log(displayFileName);
     toast({
       title: 'Arquivo anexado com sucesso!',
-      description:
-        `Arquivo: ${fileEvent.name}`,
+      description: `Arquivo: ${fileEvent.name}`,
       status: 'success',
       duration: 3500,
       isClosable: true,
       position: 'top-right',
     });
-  }
+  };
   async function onSubmit(data: any): Promise<void> {
     const formData = new FormData();
-    const splitRg = data.rg.split("-", 2)
+    const splitRg = data.rg.split('-', 2);
     formData.append('nome', data.nome);
     formData.append('nomeSocial', data.nomeSocial);
     formData.append('cpf', data.cpf);
@@ -232,8 +231,7 @@ const InclusionOrUpdatePensionerData = (props: UserProps) => {
 
         <Box mb="4rem" flexWrap="wrap" w="100%">
           <Box fontWeight="bold" border="1px" textAlign="center" bg="gray.500">
-          ORIENTAÇÕES E DOCUMENTOS COMPROBATÓRIOS - PENSIONISTA
-
+            ORIENTAÇÕES E DOCUMENTOS COMPROBATÓRIOS - PENSIONISTA
           </Box>
 
           <Box
@@ -245,9 +243,12 @@ const InclusionOrUpdatePensionerData = (props: UserProps) => {
             p="0.5rem"
           >
             <Text>
-              1. O inciso VIII, do Artigo 34, da Lei Estadual Nº 452/74, inclui os pensionistas de militares estaduais como beneficiários obrigatórios do regime
-de Assistência Médico–Hospitalar (AMH) da CBPM. Em razão disso, podem e devem ter seus dados incluídos e atualizados no Cadastro de
-Beneficiários da AMH/CBPM, por meio do presente formulário, devidamente assinado.
+              1. O inciso VIII, do Artigo 34, da Lei Estadual Nº 452/74, inclui
+              os pensionistas de militares estaduais como beneficiários
+              obrigatórios do regime de Assistência Médico–Hospitalar (AMH) da
+              CBPM. Em razão disso, podem e devem ter seus dados incluídos e
+              atualizados no Cadastro de Beneficiários da AMH/CBPM, por meio do
+              presente formulário, devidamente assinado.
             </Text>
           </Box>
 
@@ -260,8 +261,10 @@ Beneficiários da AMH/CBPM, por meio do presente formulário, devidamente assina
             p="0.5rem"
           >
             <Text>
-              2. Todos os documentos ora solicitados, quando necessários, devem ser entregues conjuntamente, pois resguardam direitos e garantias do
-beneficiário(a), preservando a legalidade e integralidade dos registros.
+              2. Todos os documentos ora solicitados, quando necessários, devem
+              ser entregues conjuntamente, pois resguardam direitos e garantias
+              do beneficiário(a), preservando a legalidade e integralidade dos
+              registros.
             </Text>
           </Box>
 
@@ -274,7 +277,8 @@ beneficiário(a), preservando a legalidade e integralidade dos registros.
             p="0.5rem"
           >
             <Text>
-              3. Cópia simples do documento legal que contenham   o n º do RG, do CPF ou do CIN (Carteira de Identidade Nacional) do(a) pensionista. 
+              3. Cópia simples do documento legal que contenham o n º do RG, do
+              CPF ou do CIN (Carteira de Identidade Nacional) do(a) pensionista.
             </Text>
           </Box>
 
@@ -298,7 +302,8 @@ beneficiário(a), preservando a legalidade e integralidade dos registros.
             p="0.5rem"
           >
             <Text>
-              5. Cópia do demonstrativo de pagamento pensionista e cópia da certidão de óbito.
+              5. Cópia do demonstrativo de pagamento pensionista e cópia da
+              certidão de óbito.
             </Text>
           </Box>
 
@@ -324,7 +329,17 @@ beneficiário(a), preservando a legalidade e integralidade dos registros.
             p="0.5rem"
           >
             <Text>
-              7. Inscrição provisória de 60 (sessenta) dias: Para dependente já inscrito(a) na CBPM como beneficiário(a) do regime de AMH, contudo, ainda com pendência em andamento no processo de pensão, e para não haver solução de continuidade em eventual tratamento de saúde em andamento, poderá requerer a inscrição provisória no regime de AMH da CBPM com a Cruz Azul de São Paulo, com validade de 60 (sessenta) dias, mediante o preenchimento do presente formulário, todavia juntando a este, uma cópia simples do protocolo do pedido de pensão junto à SPPREV, comprometendo-se pelas dívidas de coparticipação geradas se deferida a pensão ou o valor total do tratamento no caso de indeferimento do benefício. 
+              7. Inscrição provisória de 60 (sessenta) dias: Para dependente já
+              inscrito(a) na CBPM como beneficiário(a) do regime de AMH,
+              contudo, ainda com pendência em andamento no processo de pensão, e
+              para não haver solução de continuidade em eventual tratamento de
+              saúde em andamento, poderá requerer a inscrição provisória no
+              regime de AMH da CBPM com a Cruz Azul de São Paulo, com validade
+              de 60 (sessenta) dias, mediante o preenchimento do presente
+              formulário, todavia juntando a este, uma cópia simples do
+              protocolo do pedido de pensão junto à SPPREV, comprometendo-se
+              pelas dívidas de coparticipação geradas se deferida a pensão ou o
+              valor total do tratamento no caso de indeferimento do benefício.
             </Text>
           </Box>
         </Box>
@@ -382,7 +397,9 @@ beneficiário(a), preservando a legalidade e integralidade dos registros.
               })}
             />
 
-            {errors.nomeSocial && <Text color="red">{errors.nomeSocial.message}</Text>}
+            {errors.nomeSocial && (
+              <Text color="red">{errors.nomeSocial.message}</Text>
+            )}
           </FormControl>
 
           <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 3 }}>
@@ -911,67 +928,99 @@ beneficiário(a), preservando a legalidade e integralidade dos registros.
             </FormControl>
           </SimpleGrid>
         </Box>
-<br/><br/>
+        <br />
+        <br />
         <div>
-          <Text fontWeight="700" textAlign="center">REQUERIMENTO/TERMO DE RESPONSABILIDADE E DE CONSENTIMENTO
+          <Text fontWeight="700" textAlign="center">
+            REQUERIMENTO/TERMO DE RESPONSABILIDADE E DE CONSENTIMENTO
           </Text>
 
           <br />
           <Text>
-            REQUERIMENTO/TERMO DE RESPONSABILIDADE E DE CONSENTIMENTO
-Requeiro a inclusão (ou atualização de dados) no cadastro de beneficiários do regime de
-Assistência Médico–Hospitalar (AMH) CBPM, com fundamento no Inciso VIII, do Artigo 34, da Lei Estadual Nº
-452/74.<br /><br />
-Reconheço e autorizo os descontos nos códigos 070018 – Contribuição de Assistência e 080018
-– Coparticipação financeira nas despesas de atendimentos ambulatoriais e hospitalares, nos termos do
-parágrafo 3º, do artigo 30, da Lei nº 452/74.<br /><br />
-Na hipótese de ser provisória a inscrição (conforme descrição no item 7 do quadro de
-“Orientações e Documentos Comprobatórios” do presente formulário) e esta não ser aprovada pelo órgão
-competente, comprometo-me a quitar o valor total do tratamento em razão da utilização do regime de
-AMH/CBPM.<br /><br />
-Caso ocorra alteração nos dados constantes desta Declaração, comprometo–me a comunicar
-formalmente a CBPM, apresentando cópia da documentação pertinente.<br /><br />
-Estou ciente que as declarações são de inteira responsabilidade do contribuinte, que
-responderá por eventuais inconsistências das informações, nos termos da lei, bem como de indenizar o Estado
-ou terceiros por prejuízos decorrentes, incluindo eventuais despesas médicas e hospitalares suportadas
-indevidamente pelo regime de AMH/CBPM.<br /><br />
-Nos termos do Inciso XII, do Artigo 5º, da Lei Federal nº 13.709/18, há o meu consentimento
-para o tratamento dos presentes dados pela CBPM, para fins de AMH, no que preconiza a Lei Estadual Nº
-452/74 e demais legislação vigente. Entende–se como tratamento de dados e consentimento o que está
-definido nos Incisos X e XII, do Artigo 5º, da Lei Federal Nº 13.709/18, conforme a seguir transcrito:
+            REQUERIMENTO/TERMO DE RESPONSABILIDADE E DE CONSENTIMENTO Requeiro a
+            inclusão (ou atualização de dados) no cadastro de beneficiários do
+            regime de Assistência Médico–Hospitalar (AMH) CBPM, com fundamento
+            no Inciso VIII, do Artigo 34, da Lei Estadual Nº 452/74.
+            <br />
+            <br />
+            Reconheço e autorizo os descontos nos códigos 070018 – Contribuição
+            de Assistência e 080018 – Coparticipação financeira nas despesas de
+            atendimentos ambulatoriais e hospitalares, nos termos do parágrafo
+            3º, do artigo 30, da Lei nº 452/74.
+            <br />
+            <br />
+            Na hipótese de ser provisória a inscrição (conforme descrição no
+            item 7 do quadro de “Orientações e Documentos Comprobatórios” do
+            presente formulário) e esta não ser aprovada pelo órgão competente,
+            comprometo-me a quitar o valor total do tratamento em razão da
+            utilização do regime de AMH/CBPM.
+            <br />
+            <br />
+            Caso ocorra alteração nos dados constantes desta Declaração,
+            comprometo–me a comunicar formalmente a CBPM, apresentando cópia da
+            documentação pertinente.
+            <br />
+            <br />
+            Estou ciente que as declarações são de inteira responsabilidade do
+            contribuinte, que responderá por eventuais inconsistências das
+            informações, nos termos da lei, bem como de indenizar o Estado ou
+            terceiros por prejuízos decorrentes, incluindo eventuais despesas
+            médicas e hospitalares suportadas indevidamente pelo regime de
+            AMH/CBPM.
+            <br />
+            <br />
+            Nos termos do Inciso XII, do Artigo 5º, da Lei Federal nº 13.709/18,
+            há o meu consentimento para o tratamento dos presentes dados pela
+            CBPM, para fins de AMH, no que preconiza a Lei Estadual Nº 452/74 e
+            demais legislação vigente. Entende–se como tratamento de dados e
+            consentimento o que está definido nos Incisos X e XII, do Artigo 5º,
+            da Lei Federal Nº 13.709/18, conforme a seguir transcrito:
           </Text>
 
           <br />
           <Box ml={{ base: 0, sm: 0, md: 4, lg: 4 }} fontSize="sm" mb="2rem">
             <Text>
-              1) Tratamento: toda operação realizada com dados pessoais, como as que se referem a coleta, produção, recepção, classificação,
-utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação
-ou controle da informação, modificação, comunicação, transferência, difusão ou extração.
+              1) Tratamento: toda operação realizada com dados pessoais, como as
+              que se referem a coleta, produção, recepção, classificação,
+              utilização, acesso, reprodução, transmissão, distribuição,
+              processamento, arquivamento, armazenamento, eliminação, avaliação
+              ou controle da informação, modificação, comunicação,
+              transferência, difusão ou extração.
             </Text>
 
             <br />
             <Text>
-              2) Consentimento: manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados
-pessoais para uma finalidade determinada.</Text>
+              2) Consentimento: manifestação livre, informada e inequívoca pela
+              qual o titular concorda com o tratamento de seus dados pessoais
+              para uma finalidade determinada.
+            </Text>
           </Box>
         </div>
 
         <Flex justify="center" w="100%" mb="2rem">
           <VStack>
-            <Text>Data, ________ / ____________ / _________ Assinatura contribuinte: ____________________________________</Text>
-            <Text>Nome: ___________________ CPF: __________________________</Text>
+            <Text>
+              Data, ________ / ____________ / _________ Assinatura contribuinte:
+              ____________________________________
+            </Text>
+            <Text>
+              Nome: ___________________ CPF: __________________________
+            </Text>
           </VStack>
-
         </Flex>
         <br />
         <br />
         <br />
         <br />
 
-
         <Flex justify="center" w="100%" mb="2rem">
           <Box mb="4rem" flexWrap="wrap" w="55%">
-            <Box fontWeight="bold" border="1px" textAlign="center" bg="gray.500">
+            <Box
+              fontWeight="bold"
+              border="1px"
+              textAlign="center"
+              bg="gray.500"
+            >
               Documentos Apresentados e conferidos
             </Box>
 
@@ -981,45 +1030,43 @@ pessoais para uma finalidade determinada.</Text>
               borderColor="gray.500"
               w="100%"
               textAlign="left"
-              p="0.5rem">
+              p="0.5rem"
+            >
               <Text>
                 <Box w="100%" p={4}>
-      <Grid templateColumns="repeat(2, 1fr)">
-        {/* Linha 1 */}
-        <Text>(   ) RG/CPF do(a) Pensionista.</Text>
-        <Text>(   ) Certidão de Óbito do militar Legador.</Text>
+                  <Grid templateColumns="repeat(2, 1fr)">
+                    {/* Linha 1 */}
+                    <Text>( ) RG/CPF do(a) Pensionista.</Text>
+                    <Text>( ) Certidão de Óbito do militar Legador.</Text>
 
-        {/* Linha 2 */}
-        <Text>(   ) CIN do(a) Pensionista.</Text>
-        <Text>(   ) Protocolo do pedido de pensão junto à SPPrev</Text>
+                    {/* Linha 2 */}
+                    <Text>( ) CIN do(a) Pensionista.</Text>
+                    <Text>
+                      ( ) Protocolo do pedido de pensão junto à SPPrev
+                    </Text>
 
-        {/* Linha 3 */}
-        <Text>(   ) Comprovante de endereço.</Text>
-        <Text>(   ) Holerite do(a) Pensionista.</Text>
+                    {/* Linha 3 */}
+                    <Text>( ) Comprovante de endereço.</Text>
+                    <Text>( ) Holerite do(a) Pensionista.</Text>
 
-        {/* Linha 4 */}
-        <Text>(   ) Procuração.</Text>
-        <Text>(   ) Documento de interdição.</Text>
+                    {/* Linha 4 */}
+                    <Text>( ) Procuração.</Text>
+                    <Text>( ) Documento de interdição.</Text>
 
-        {/* Linha 5 */}
-        <Text>(   ) ___________________________</Text>
-        <Text>(   ) ___________________________</Text>
-      </Grid>
-    </Box>
-                <br/>
-
+                    {/* Linha 5 */}
+                    <Text>( ) ___________________________</Text>
+                    <Text>( ) ___________________________</Text>
+                  </Grid>
+                </Box>
+                <br />
 
                 <FormTable></FormTable>
-                <br/>
+                <br />
                 <b>(uso interno)</b>
-
-
-
               </Text>
             </Box>
           </Box>
         </Flex>
-
 
         <Box mt={10} mb={10} fontWeight="700" textAlign="center">
           <Text>
@@ -1114,16 +1161,17 @@ pessoais para uma finalidade determinada.</Text>
           </Button>
         </SimpleGrid>
 
-<Box
+        <Box
           my={16}
           display={'Flex'}
           alignItems="center"
           flexDirection={'column'}
         >
           <Heading as={'h1'} size={'md'}>
-            {displayFileName.length} de 3 arquivo(s) anexado(s) - quantidade mínima necessária:
+            {displayFileName.length} de 3 arquivo(s) anexado(s) - quantidade
+            mínima necessária:
           </Heading>
-          <UnorderedList ms={16} >
+          <UnorderedList ms={16}>
             {displayFileName.map((item, index) => (
               <ListItem key={index}>{item}</ListItem>
             ))}

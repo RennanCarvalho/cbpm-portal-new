@@ -39,6 +39,7 @@ import UpdatePensionistaDataValidator from '../../Validators/Forms/UpdatePension
 import MedicalExpensesRefundValidator from '../../Validators/Forms/MedicalExpensesRefundValidator'
 import RegistrationUpdate from '../../Validators/Forms/RegistrationUpdateValidator'
 import SendAttachMailHtml from 'App/Mailers/SendAttachMailHtml'
+import InclusionOfMinorInJudicialCustodyValidator from 'App/Validators/Forms/InclusionOfMinorInJudicialCustodyValidator'
 
 
 export default class FormsController {
@@ -783,7 +784,117 @@ export default class FormsController {
     }
   }
 
+public async inclusionOfMinorInJudicialCustody({
+    request,
+    response,
+    auth,
+  }: HttpContextContract): Promise<void> {
+    const formData =request
 
+    // Verifica se o usuário pussui id e faz a validação do token
+    const id = auth.user?.id
+
+    // Verifica a categoria do usuário
+    const categoria = auth.user?.categoria
+
+    if ((id && categoria === 'CONTRIBUINTE') || (id && categoria === 'PENSIONISTA')) {
+      // Nome do diretório do formulário
+      const formName = 'inclusao_de_menor_sob_guarda'
+
+      // Recebe os arquivos da requisição
+      const payload = request.files('file', {
+        size: '2mb',
+        extnames: ['png', 'jpg', 'jpeg', 'pdf'],
+      })
+      console.warn(payload)
+
+      // Valida se vieram arquivos na requisição
+      if (payload.length === 0 || payload.length < 2) {
+        return response.status(422).json({ document: 'Favor anexar os documentos solicitados.' })
+      }
+
+      // Verifica se o arquivos são validos
+      payload.map((item) => {
+        if (!item.isValid) {
+          const error = JSON.stringify(item.errors)
+          throw new FileException(error, 422)
+        }
+      })
+
+      // Cria o diretório caso o mesmo não exista
+      const path = await CreateDirectoryService.execute({ id, formName })
+
+      // Move os arquivos para o diretório informado
+      for (let item of payload) {
+        await item.move(`${path.relativePath}`),
+          {
+            name: `${item.clientName}`,
+          }
+      }
+
+      // Cria o caminho para o arquivo zipado
+      const zippedAttachPath = path.relativePath + '/' + 'documentos_comprobatorios.zip'
+
+      // Zipa todo o diretório informado
+      child_process.execSync(`zip -r documentos_comprobatorios.zip *`, {
+        cwd: path.relativePath,
+      })
+
+      // Busca o id da tabela Pessoa do contribuinte ou pensionista
+      const idPessoa = await Database.from('usuario_portal_cbpm')
+        .where('id', id)
+        .select('id_pessoa')
+
+      // Busca o nome e o CPF do contribuinte ou pensionista
+      const nameAndCPF = await Database.from('Pessoa')
+        .where('id', idPessoa[0].id_pessoa)
+        .select('nome', 'cpf')
+
+      // Cria o objeto com os dados para o envio dos anexos
+      const attachData = {
+        name: nameAndCPF[0].nome,
+        cpf: nameAndCPF[0].cpf,
+        form: 'Inclusão de Menor Sob Guarda Judicial',
+        path: zippedAttachPath,
+      }
+
+      // Envia um e-mail com os arquivos enviados em anexo
+      new SendAttachMail(attachData).sendLater()
+
+      // Cria o registro da solicitação
+      // const data = await AtualizacaoCadastralPortal.create({
+      //   id_usuario_portal_cbpm: id,
+      //   nome_formulario: Forms.INCLUSAO_MENOR_SOB_GUARDA_JUDICIAL,
+      // })
+
+      //Formata a data de nascimento para o formato yyyy/mm/dd
+      // const splitedDate = formData.dataNascimento.split('/')
+      // const formattedDate = splitedDate[2] + '/' + splitedDate[1] + '/' + splitedDate[0]
+
+      // Cria o registro dos dados recebidos
+      // const minor = await InclusaoDeMenorSobGuarda.create({
+      //   id_atualizacao_cadastral_portal: data.id,
+      //   id_parentesco: formData.parentesco,
+      //   id_estado_civil: formData.estadoCivil,
+      //   local_documentos: path.absolutePath,
+      //   nome: formData.nome,
+      //   sexo: formData.sexo,
+      //   dtnascimento: new Date(formattedDate),
+      //   cpf: formData.cpf,
+      //   rg: formData.rg,
+      //   rgdg: formData.rgdg,
+      //   nome_mae: formData.nomeMae,
+      //   nome_pai: formData.nomePai,
+      //   tel_residencial: formData.telResidencial,
+      //   tel_celular: formData.telCelular,
+      //   tel_outro: formData.telOutro,
+      //   email: formData.email,
+      //   tipo_documento: formData.tipoDocumento,
+      // })
+
+      return response.json(request)
+    }
+  }
 
 
 

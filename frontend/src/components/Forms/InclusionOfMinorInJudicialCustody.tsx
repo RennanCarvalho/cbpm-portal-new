@@ -33,7 +33,7 @@ import { useState } from 'react';
 import InputMask from 'react-input-mask';
 import { FormTable } from './Table/FormTable';
 
-const InclusionOfMinorInCustody = (props: UserProps) => {
+const InclusionOfMinorInJudicialCustody = (props: UserProps) => {
   const {
     register,
     handleSubmit,
@@ -95,7 +95,7 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
         {
           await api({
             method: 'post',
-            url: '/user/forms/inclusion-of-minor',
+            url: '/user/forms/inclusion-of-minor-judicy',
             data: formData,
             headers: {
               'content-type': 'multipart/form-data',
@@ -165,7 +165,7 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
     >
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormHeader
-          title={'FORMULÁRIO DE INCLUSÃO DE MENOR SOB TUTELA – CURATELA - C.05'}
+          title={'FORMULÁRIO DE INCLUSÃO DE MENOR SOB GUARDA JUDICIAL- C.05.1'}
           attachment={'E'}
         />
         <Box mb="4rem" flexWrap="wrap" w="100%">
@@ -182,7 +182,10 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
             p="0.5rem"
           >
             <Text>
-              1. Conforme nº 2 e 3, do parágrafo 2º, do Artigo 34, da Lei Estadual Nº 452, de 02 de outubro de 1974, os menores sob Tutela e Curatela, os quais comprovadamente vivam sob a dependência econômica do contribuinte, equiparam–se aos filhos previstos no Inciso II, do artigo 34, da mesma Lei, ora referida. Para tanto, são necessários os documentos relacionados nos tópicos seguintes, e ao final, assinado pelo(a) contribuinte ou seu representante legal.
+1. Conforme nº 2 e 3, do parágrafo 2º, do Artigo 34, da Lei Estadual Nº 452, de 02 de outubro de 1974, os menores sob Guarda Judicial os
+quais comprovadamente vivam sob a dependência econômica do contribuinte, equiparam–se aos filhos previstos no Inciso II, do artigo
+34, da mesma Lei, ora referida. Para tanto, são necessários os documentos relacionados nos tópicos seguintes, e ao final, assinado
+pelo(a) contribuinte ou seu representante legal.
             </Text>
           </Box>
 
@@ -195,10 +198,8 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
             p="0.5rem"
           >
             <Text>
-              2. Todos os documentos ora solicitados, devem ser entregues
-              conjuntamente, pois resguardam direitos e garantias do próprio
-              contribuinte e dos seus beneficiários, preservando a legalidade e
-              integralidade dos registros.
+              2. Todos os documentos ora solicitados, devem ser entregues conjuntamente, pois resguardam direitos e garantias do próprio
+contribuinte e dos seus beneficiários, preservando a legalidade e integralidade dos registros.
             </Text>
           </Box>
 
@@ -211,10 +212,8 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
             p="0.5rem"
           >
             <Text>
-              3. Cópia do último demonstrativo de pagamento (holerite), onde
-              conste a contribuição para a CBPM e bem como documentos legais que
-              contenham o n º do RG, do CPF ou do CIN (Carteira de Identidade
-              Nacional) do(a) PM contribuinte.
+              3. Cópia do último demonstrativo de pagamento (holerite), onde conste a contribuição para a CBPM, bem como documentos legais
+que contenham o n º do RG, do CPF ou do CIN (Carteira de Identidade Nacional) do(a) PM contribuinte e comprovante de endereço.
             </Text>
           </Box>
 
@@ -227,7 +226,7 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
             p="0.5rem"
           >
             <Text>
-              4. Apresentar os Termos que comprovem a Tutela ou Curatela do(a)(s) menor(es) de idade.
+              4. Apresentar os Termos que comprovem a Guarda Judicial do(a)(s) menor(es) de idade.
             </Text>
           </Box>
 
@@ -240,10 +239,8 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
             p="0.5rem"
           >
             <Text>
-              5. Cópia simples da Certidão de Nascimento (com emissão inferior a
-              6 meses, para os maiores de 12 anos), bem como documentos legais
-              que contenham o n º do RG, do CPF ou do CIN (Carteira de
-              Identidade Nacional) do(a) menor dependente.
+              5. Cópia simples da Certidão de Nascimento (com emissão inferior a 6 meses, para os maiores de 12 anos), bem como documentos
+legais que contenham o n º do RG, do CPF ou do CIN (Carteira de Identidade Nacional) do(a) menor dependente. 
             </Text>
           </Box>
 
@@ -256,58 +253,8 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
             p="0.5rem"
           >
             <Text>
-              6. Para fins de comprovação de dependência econômica de Menor sob
-              Tutela ou Curatela, apresentar pelo menos 02 (dois) dos documentos
-              relacionados a seguir, com parâmetro no artigo 15 do Decreto
-              Estadual nº 52.860, de 02 de abril de 2008:
-            </Text>
-
-            <UnorderedList styleType="none" spacing={1}>
-              <ListItem>
-                a. Declaração pública de dependência econômica, feita perante
-                Tabelião de Notas.
-              </ListItem>
-
-              <ListItem>
-                b. Cópia de declaração de Imposto de Renda, em que conste como
-                dependente(s) do contribuinte.
-              </ListItem>
-
-              <ListItem>c. Disposições testamentárias.</ListItem>
-
-              <ListItem>d. Comprovação de residência em comum.</ListItem>
-
-              <ListItem>
-                e. Apólice de seguro em que conste o(a) dependente como
-                beneficiário(a) do contribuinte.
-              </ListItem>
-
-              <ListItem>
-                f. Registro em associação de classe onde conste o(a) dependente
-                como beneficiário(a) do contribuinte.
-              </ListItem>
-
-              <ListItem>
-                g. Inscrição em instituição de assistência médica do(a)
-                dependente como beneficiário(a) do contribuinte.
-              </ListItem>
-              <ListItem>
-                h. Declaração e Comprovante de pagamento da escola do dependente
-                por parte do contribuinte
-              </ListItem>
-            </UnorderedList>
-          </Box>
-
-          <Box
-            border="1px"
-            borderTop="none"
-            borderColor="gray.500"
-            w="100%"
-            textAlign="justify"
-            p="0.5rem"
-          >
-            <Text>
-              7. Para a manutenção do benefício a menores sob tutela e curatela que atingirem a maioridade legal e que apresentem a condição de invalidez ou de incapacidade civil, e assim continuarem vivendo sob a dependência econômica do(a) contribuinte, este(a) deverá incluí-lo(a) como Beneficiário(a) com Invalidez, utilizando o Formulário respectivo.
+              6. Para a manutenção do benefício a menores sob guarda judicial que atingirem a maioridade legal e que apresentem a condição de
+invalidez ou de incapacidade civil, e assim continuarem vivendo sob a dependência econômica do(a) contribuinte, este(a) deverá incluílo(a) como Beneficiário(a) com Invalidez, utilizando o Formulário respectivo.
             </Text>
           </Box>
         </Box>
@@ -496,7 +443,7 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
               bg="gray.500"
               borderRadius="none"
             >
-              DADOS PESSOAIS – MENOR SOB TUTELA/CURATELA
+              DADOS PESSOAIS – MENOR SOB GUARDA JUDICIAL
             </Box>
 
             <FormControl>
@@ -702,15 +649,14 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
                   Parentesco
                 </FormLabel>
 
-                <Select
-                  {...register('parentesco')}
+                <Input
+                  placeholder="Parentesco"
+                  w="100%"
                   fontSize={{ base: 'sm', sm: 'sm', md: 'md', lg: 'md' }}
-                >
-                  <option selected value={6}>
-                    T.G COM ADOÇÃO
-                  </option>
-                  <option value={8}>OUTROS</option>
-                </Select>
+                  borderRadius="none"
+                  borderColor="gray.500"
+                  {...register('Parentesco')}
+                />
               </FormControl>
 
               <FormControl>
@@ -1080,10 +1026,10 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
 
           <br />
           <Text>
-            Requeiro a inclusão como beneficiário(a) do regime de Assistência
-            Médico–Hospitalar (AMH) da CBPM, com fundamento no parágrafo 2º, do
-            Artigo 34, da Lei Estadual Nº 452/74, do(a) menor ora
-            qualificado(a), que se encontra sob minha dependência econômica.
+            Requeiro a inclusão como beneficiário(a) do regime de Assistência Médico–Hospitalar
+(AMH) da CBPM, com fundamento no parágrafo 2º, do Artigo 34, da Lei Estadual Nº 452/74, do(a)
+menor ora qualificado(a), que se encontra sob minha dependência econômica.
+
             <br />
             <br />
             <Stack align="flex-start">
@@ -1093,69 +1039,76 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
               </Text>
               <RadioGroup defaultValue="GUARDA JUDICIAL">
                 <VStack align="flex-start" ml={10}>
-                  <Radio {...register('tipoDocumento')} value="TUTELA">
-                    Tutela
+                  <Radio {...register('tipoDocumento')} value="DEFINITIVA">
+                     Guarda Judicial Definitiva
                   </Radio>
-
-                  <Radio {...register('tipoDocumento')} value="CURATELA">
-                    Curatela
+                  <Radio {...register('tipoDocumento')} value="TEMPORARIA">
+                    Guarda Judicial Temporária
                   </Radio>
                 </VStack>
               </RadioGroup>
             </Stack>
             <br />
-            Reconheço que haverá o desconto no código 080018 – coparticipação
-            financeira nas despesas de atendimentos ambulatoriais, hospitalares
-            e de obstetrícia, nos termos do parágrafo 3º, do artigo 30, da Lei
-            nº 452/74.
+            Reconheço que haverá o desconto no código 080018 – coparticipação financeira
+nas despesas de atendimentos ambulatoriais, hospitalares e de obstetrícia, nos termos do
+parágrafo 3º, do artigo 30, da Lei nº 452/74. 
             <br />
             <br />
-            Caso ocorra alteração nas condições de guarda, tutela ou curatela
-            constantes desta declaração, comprometo–me a comunicar formalmente a
-            CBPM, apresentando cópia da documentação pertinente.
+            Caso ocorra alteração nas condições de guarda, tutela ou curatela constantes
+desta declaração, comprometo–me a comunicar formalmente a CBPM, apresentando cópia da
+documentação pertinente.
             <br />
             <br />
-            Estou ciente que as declarações são de inteira responsabilidade do
-            contribuinte, que responderá por eventuais inconsistências das
-            informações, nos termos da lei, bem como de indenizar o Estado ou
-            terceiros por prejuízos decorrentes, incluindo eventuais despesas
-            médicas e hospitalares suportadas indevidamente pelo regime de
-            AMH/CBPM, e por fim, às sanções previstas no Regulamento Disciplinar
-            da Polícia Militar do Estado de São Paulo.
+            Estou ciente que as declarações são de inteira responsabilidade do contribuinte,
+que responderá por eventuais inconsistências das informações, nos termos da lei, bem como de
+indenizar o Estado ou terceiros por prejuízos decorrentes, incluindo eventuais despesas médicas e
+hospitalares suportadas indevidamente pelo regime de AMH/CBPM, e por fim, às sanções
+previstas no Regulamento Disciplinar da Polícia Militar do Estado de São Paulo.
+
             <br />
             <br />
-            Nos termos do Inciso XII, do Artigo 5º, e do Artigo 14, da Lei
-            Federal nº 13.709/18, há o consentimento do contribuinte e do(a)
-            beneficiário(a) aqui relacionado(a), para o tratamento dos presentes
-            dados pela CBPM, para fins de AMH, no que preconiza a Lei Estadual
-            nº 452/74 e demais legislação vigente. Entende–se como tratamento de
-            dados e consentimento o que está definido nos Incisos X e XII, do
-            Artigo 5º, da Lei Federal nº 13.709/18, conforme a seguir
-            transcrito:
+            Nos termos do Inciso XII, do Artigo 5º, e do Artigo 14, da Lei Federal nº 13.709/18,
+há o consentimento do contribuinte e do(a) beneficiário(a) aqui relacionado(a), para o tratamento
+dos presentes dados pela CBPM, para fins de AMH, no que preconiza a Lei Estadual nº 452/74 e
+demais legislação vigente. Entende–se como tratamento de dados e consentimento o que está
+definido nos Incisos X e XII, do Artigo 5º, da Lei Federal nº 13.709/18, conforme a seguir transcrito:
           </Text>
 
           <br />
           <Box ml={{ base: 0, sm: 0, md: 4, lg: 4 }} fontSize="sm" mb="2rem">
             <Text>
-              1) Tratamento: toda operação realizada com dados pessoais, como as
-              que se referem a coleta, produção, recepção, classificação,
-              utilização, acesso, reprodução, transmissão, distribuição,
-              processamento, arquivamento, armazenamento, eliminação, avaliação
-              ou controle da informação, modificação, comunicação,
-              transferência, difusão ou extração.
+              1) Tratamento: toda operação realizada com dados pessoais, como as que se referem a coleta, produção,
+recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento,
+arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação,
+transferência, difusão ou extração.
+
             </Text>
 
             <br />
             <Text>
-              2) Consentimento: manifestação livre, informada e inequívoca pela
-              qual o titular concorda com o tratamento de seus dados pessoais
-              para uma finalidade determinada
+              Consentimento: manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus
+dados pessoais para uma finalidade determinada
             </Text>
           </Box>
         </div>
         <br />
         <br />
-
+        <Text>
+          <Text fontWeight="700" textAlign="center">
+            Declaração
+          </Text>
+          <br />
+          <br />
+          Eu, __________________________________________, CPF nº
+          _________________ comprometome a comunicar formalmente com a CBPM
+          apresentando cópia de decisão Judicial e demais documentos probatórios
+          em caso de prorrogação do Termo de Guarda e Responsabilidade a contar
+          de ___/____/20____. Comprometo ainda, a arcar totalmente com as
+          despesas médicas que porventura ocorram após o dia _____/_____/20____,
+          caso não seja prorrogado o Termo de guarda.
+        </Text>{' '}
+        <br />
+        <br />
         <Flex justify="center" w="100%" mb="2rem">
           <VStack>
             <Text>
@@ -1207,10 +1160,10 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
 
                     {/* Linha 4 */}
                     <Text>( ) Comprovante Endereço.</Text>
-                    <Text>( ) Tutela/Curatela.</Text>
+                    <Text>( ) Termo Guarda Judicial.</Text>
 
                     {/* Linha 5 */}
-                    <Text>( ) Comprovante Dependência Econômica</Text>
+                    <Text>( ) ___________________</Text>
                     <Text>( ) ___________________</Text>
                   </Grid>
                 </Box>
@@ -1257,7 +1210,7 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
             borderRadius="3xl"
             _hover={{ color: 'none' }}
             onClick={() =>
-              downloadDocument('inclusao-de-menor-sob-guarda-curatela')
+              downloadDocument('inclusao-de-menor-sob-guarda-judicial')
             }
           >
             Baixar Preenchido
@@ -1353,4 +1306,4 @@ const InclusionOfMinorInCustody = (props: UserProps) => {
   );
 };
 
-export default InclusionOfMinorInCustody;
+export default InclusionOfMinorInJudicialCustody;

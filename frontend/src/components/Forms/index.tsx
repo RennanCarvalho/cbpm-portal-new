@@ -121,10 +121,27 @@ const Forms = (isAuthorized: any) => {
           >
             <Link href="/area-restrita/servicos/formularios/inclusao-de-menor-sob-guarda-curatela">
               <Text textAlign="center" fontWeight="700">
-                Formulário de inclusão de menor so guarda – Tutela – Curatela - C.05
+                Formulário de inclusão de menor sob Tutela – Curatela - C.05
               </Text>
             </Link>
           </Box>
+
+          <Box
+            maxW="400px"
+            w="100%"
+            py={2}
+            border="1px"
+            borderColor="gray.default"
+            boxShadow="0 5px 5px #C0C0C0"
+            bg="white.default"
+          >
+            <Link href="/area-restrita/servicos/formularios/inclusao-de-menor-sob-guarda-judicial">
+              <Text textAlign="center" fontWeight="700">
+                Formulário de inclusão de menor sob guarda – judicial - C.05.1
+              </Text>
+            </Link>
+          </Box>
+
           <Box
             maxW="400px"
             w="100%"

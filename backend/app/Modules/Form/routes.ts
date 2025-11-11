@@ -9,6 +9,8 @@ Route.group(() => {
   )
   Route.post('/parent-inclusion', 'FormsController.parentInclusion')
   Route.post('/inclusion-of-minor', 'FormsController.inclusionOfMinorInCustody')
+  Route.post('/inclusion-of-minor-judicy', 'FormsController.inclusionOfMinorInJudicialCustody')
+  
   Route.post('/inclusion-of-disabled-beneficiary', 'FormsController.inclusionOfDisabledBeneficiary')
   
   Route.post('/registration-update', 'FormsController.registrationUpdate')

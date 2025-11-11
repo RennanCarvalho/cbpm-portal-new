@@ -49,12 +49,11 @@ export const theme = extendTheme({
         color: 'black.default',
       },
 
-      "button, a, input, textarea": {
-        border: "solid thin transparent",
-      },
+      // "button, a, input, textarea": {
+      //   border: "solid thin transparent",
+      // },
 
       "button:hover, a:hover, input:hover, textarea:hover, button:focus, a:focus, input:focus, textarea:focus": {
-        border: "solid thin #EDEDED",
         boxShadow: "0 0 5px rgba(0, 123, 255, 0.5)",        
       },
       "a:has(img)": {
