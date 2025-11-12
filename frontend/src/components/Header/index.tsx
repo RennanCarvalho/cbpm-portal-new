@@ -41,13 +41,19 @@ const Header = () => {
             >
               <Img src="/logos/logo-main.png" h={'136px'} />
             </Link>
-            <Text paddingLeft={'22px'} fontFamily={'Rawline, sans-serif'} m='0' color={'#333'}>
+            <Text
+              paddingLeft={'22px'}
+              fontFamily={'Rawline, sans-serif'}
+              m="0"
+              color={'#333'}
+              fontWeight={'100'}
+            >
               Caixa Beneficente da
               <br />
               <strong>Polícia Militar do Estado de São Paulo</strong>
             </Text>
           </HStack>
-          <Img src="/logos/logo-gov.png" padding='0 20px'/>
+          <Img src="/logos/logo-gov.png" padding="0 20px" />
         </HStack>
         <Login />
       </Container>
