@@ -3,6 +3,7 @@ import {
   Container,
   Flex,
   Heading,
+  useBreakpointValue,
 } from '@chakra-ui/react';
 import { SignInProvider } from '../../contexts/SignInContext';
 import { CreateAccount } from './CreateAccount';
@@ -28,14 +29,23 @@ const LoginComponent = () => {
         textAlign="center"
         mt={10}
       >
-        ÁREA DE SERVIÇO DO USUÁRIO
+        Área de Serviço do Contribuinte/Dependente<br /> Sistema AMH
       </Heading>
 
-      <Flex mt={'4rem'} justify={'space-evenly'}>
+      <Flex
+          mt={'4rem'}
+          justify={'center'}
+          alignItems={'center'}
+          gap={'20px'}
+          flexDirection={useBreakpointValue({ base: 'column', lg: 'row' })}
+      >
         <SignInProvider>
           <FormLogin />
         </SignInProvider>
-        <Divisor texto='ou'/>
+        <Divisor
+          texto='ou'
+          isHorizontal={useBreakpointValue({ base: true, lg: false  })}
+/>
         <CreateAccount />
       </Flex>
 
@@ -55,8 +65,7 @@ const LoginComponent = () => {
             _hover={{ color: 'none' }}
             height={'auto'}
           >
-            Área de Serviço do Contribuinte/Dependente<br />
-            Sistema AMH
+            Passo a passo para o recadastramento de beneficiários
             <br />
             <br />
             CLIQUE AQUI

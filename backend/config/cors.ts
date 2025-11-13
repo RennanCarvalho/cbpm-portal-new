@@ -45,7 +45,7 @@ const corsConfig: CorsConfig = {
   |
   */
   // origin: true,
-  origin: ['https://portal.cbpm.sp.gov.br', 'https://cbpm.sp.gov.br'],
+  origin: ['https://portal.cbpm.sp.gov.br', 'https://cbpm.sp.gov.br', 'http://localhost:3000'],
 
   /*
   |--------------------------------------------------------------------------

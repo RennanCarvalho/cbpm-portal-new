@@ -10,6 +10,7 @@ import {
   Link,
   Text,
   Img,
+  Box,
 } from '@chakra-ui/react';
 import { Fragment } from 'react';
 import { FaBars } from 'react-icons/fa';
@@ -26,35 +27,72 @@ const Header = () => {
 
   return (
     <Fragment>
+      <Box
+        w={'100%'}
+        h="30px"
+        display={'flex'}
+        justifyContent={'center'}
+        alignItems={'center'}
+        background={'#000'}
+        boxSizing="border-box"
+        hidden={useBreakpointValue({ base: false, lg: true })}
+      >
+        <Img src="/logos/logo-gov-branco.png" w="90px" h="12px" />
+      </Box>
       <Container maxW="container.xl" centerContent>
         <HStack
-          w={'100%'}
-          height={'196px'}
-          p={'30px 52px'}
-          justifyContent={'space-between'}
+          w="100%"
+          p={{ base: '20px', lg: '30px 52px' }}
+          justifyContent="space-between"
+          flexDirection={useBreakpointValue({ base: 'column', lg: 'row' })}
+          alignItems={useBreakpointValue({ base: 'center', lg: 'center' })}
+          gap={useBreakpointValue({ base: 6, lg: 0 })}
         >
-          <HStack>
+          <HStack
+            spacing={{ base: 4, lg: 6 }}
+            alignItems="center"
+            justifyContent="center"
+            flexDirection={useBreakpointValue({ base: 'column', lg: 'row' })}
+          >
             <Link
               href={`${
                 process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'
               }`}
             >
-              <Img src="/logos/logo-main.png" h={'136px'} />
+              <Img
+                src="/logos/logo-main.png"
+                // maxH={{ base: '100px', lg: '136px' }}
+                h="136px"
+                w="164px"
+                objectFit="contain"
+              />
             </Link>
             <Text
-              paddingLeft={'22px'}
-              fontFamily={'Rawline, sans-serif'}
+              paddingLeft={{ base: 0, lg: '6px' }}
+              fontFamily="Rawline, sans-serif"
               m="0"
-              color={'#333'}
-              fontWeight={'100'}
+              color="#333"
+              fontWeight="100"
+              textAlign={{ base: 'center', lg: 'left' }}
             >
               Caixa Beneficente da
-              <br />
-              <strong>Polícia Militar do Estado de São Paulo</strong>
+              <br hidden={useBreakpointValue({ base: true, lg: false })} />
+              <strong> Polícia Militar do Estado de São Paulo</strong>
             </Text>
           </HStack>
-          <Img src="/logos/logo-gov.png" padding="0 20px" />
+
+          <Img
+            src="/logos/logo-gov.png"
+            maxH={{ base: '80px', lg: '100px' }}
+            w="auto"
+            h="auto"
+            objectFit="contain"
+            p={'0 20px'}
+            pt={{ base: 4, lg: 0 }}
+            hidden={useBreakpointValue({ base: true, lg: false })}
+          />
         </HStack>
+
         <Login />
       </Container>
     </Fragment>
