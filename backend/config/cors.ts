@@ -44,7 +44,8 @@ const corsConfig: CorsConfig = {
   |                     one of the above values.
   |
   */
-  origin: true,
+  // origin: true,
+  origin: ['https://portal.cbpm.sp.gov.br', 'https://cbpm.sp.gov.br'],
 
   /*
   |--------------------------------------------------------------------------

@@ -55,8 +55,8 @@ const LoginComponent = () => {
             _hover={{ color: 'none' }}
             height={'auto'}
           >
-            Passo a passo para o<br />
-            recadastramento de beneficiários
+            Área de Serviço do Contribuinte/Dependente<br />
+            Sistema AMH
             <br />
             <br />
             CLIQUE AQUI
