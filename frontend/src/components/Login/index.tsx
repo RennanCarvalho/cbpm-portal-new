@@ -4,6 +4,8 @@ import {
   Flex,
   Heading,
   useBreakpointValue,
+  Text,
+  VStack
 } from '@chakra-ui/react';
 import { SignInProvider } from '../../contexts/SignInContext';
 import { CreateAccount } from './CreateAccount';
@@ -72,6 +74,14 @@ const LoginComponent = () => {
           </Button>
         </Link>
       </Flex>
+      <VStack
+        gap={'10px'}
+        alignItems={'left'}
+        >
+          <Text>© 2025 CBPM.SP.GOV.BR. Todos os direitos reservados.</Text>
+          <Text>Portal de Serviços – Site Institucional CBPM – Versão nº 23.06.28-002 <br/>
+            Autorizado por Cel Mônica Puliti Dias Ferreira; homologado por Ten-Cel Rogerio Cabral Camargo e Desenvolvido e Implantado pela Sessão de T.I. - Sup Tec Com Corp-CBPM</Text>
+      </VStack>
     </Container>
   );
 };
