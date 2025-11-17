@@ -51,7 +51,8 @@ const LoginComponent = () => {
         <CreateAccount />
       </Flex>
 
-      <Flex mt={'4rem'} justify={'center'}>
+      {/* TODO: atualizar esse arquivo do passo a passo e tirar o hidden*/}
+      <Flex mt={'4rem'} justify={'center'} hidden>
         <Link
           href="/pdfs/passo-a-passo-recadastramento.pdf"
           color="white.default"
@@ -79,12 +80,12 @@ const LoginComponent = () => {
         bg={'blue.default'}
         color={'white.default'}
         p={'20px'}
-        mt={'24px'}
+        mt={'50px'}
         width={'100%'}
         gap={'10px'}
         alignItems={'left'}
         >
-          <Text><strong>© 2025 CBPM.SP.GOV.BR. Todos os direitos reservados.</strong></Text>
+          <Text textAlign={'center'}><strong>© 2025 CBPM.SP.GOV.BR. Todos os direitos reservados.</strong></Text>
           <Text>
             Portal de Serviços – Site Institucional CBPM – Versão nº {process.env.NEXT_PUBLIC_VERSION || '25.01.01-01'}<br/>
             Autorizado por Cel Mônica Puliti Dias Ferreira<br/>
