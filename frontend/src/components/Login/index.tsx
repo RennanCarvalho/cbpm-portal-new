@@ -89,7 +89,7 @@ const LoginComponent = () => {
           <Text>
             Portal de Serviços – Site Institucional CBPM – Versão nº {process.env.NEXT_PUBLIC_VERSION || '25.01.01-01'}<br/>
             Autorizado por Cel Mônica Puliti Dias Ferreira<br/>
-            homologado por Ten-Cel Rogerio Cabral Camargo<br/>
+            homologado por Ten Cel Rogerio Cabral Camargo<br/>
             Desenvolvido e Implantado pela Sessão de T.I. - Sup Tec Com Corp-CBPM
           </Text>
       </VStack>

@@ -31,11 +31,11 @@ export const theme = extendTheme({
       default: '#1048A0',
       '500': '#3182ce',
       crystal: '#0b7be4',
-      clear: '#c2e0fb'
+      clear: '#c2e0fb',
     },
     green: {
       default: '#83e0ab',
-      new: '#00b741'
+      new: '#00b741',
     },
   },
   fonts: {
@@ -49,16 +49,17 @@ export const theme = extendTheme({
         color: 'black.default',
       },
 
-      // "button, a, input, textarea": {
-      //   border: "solid thin transparent",
-      // },
-
-      "button:hover, a:hover, input:hover, textarea:hover, button:focus, a:focus, input:focus, textarea:focus": {
-        boxShadow: "0 0 5px rgba(0, 123, 255, 0.5)",        
+      'button, a, input, textarea': {
+        cursor: 'pointer',
       },
-      "a:has(img)": {
-        border: "none !important",
-        boxShadow: "none !important",
+
+      'button:hover, a:hover, input:hover, textarea:hover, button:focus, a:focus, input:focus, textarea:focus':
+        {
+          boxShadow: '0 0 5px rgba(0, 123, 255, 0.5)',
+        },
+      'a:has(img)': {
+        border: 'none !important',
+        boxShadow: 'none !important',
       },
     },
   },
