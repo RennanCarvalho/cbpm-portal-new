@@ -18,7 +18,7 @@ const LoginComponent = () => {
     <Container
       maxW="1280px"
       w="100%"
-      minH="100vh"
+      // minH="100vh"
       bgImage="url('/bg_cbpm.png')"
       bgSize="650px 650px"
       bgRepeat="no-repeat"
@@ -74,15 +74,26 @@ const LoginComponent = () => {
           </Button>
         </Link>
       </Flex>
+      
       <VStack
+        bg={'blue.default'}
+        color={'white.default'}
+        p={'20px'}
+        mt={'24px'}
+        width={'100%'}
         gap={'10px'}
         alignItems={'left'}
         >
-          <Text>© 2025 CBPM.SP.GOV.BR. Todos os direitos reservados.</Text>
-          <Text>Portal de Serviços – Site Institucional CBPM – Versão nº 23.06.28-002 <br/>
-            Autorizado por Cel Mônica Puliti Dias Ferreira; homologado por Ten-Cel Rogerio Cabral Camargo e Desenvolvido e Implantado pela Sessão de T.I. - Sup Tec Com Corp-CBPM</Text>
+          <Text><strong>© 2025 CBPM.SP.GOV.BR. Todos os direitos reservados.</strong></Text>
+          <Text>
+            Portal de Serviços – Site Institucional CBPM – Versão nº {process.env.NEXT_PUBLIC_VERSION || '25.01.01-01'}<br/>
+            Autorizado por Cel Mônica Puliti Dias Ferreira<br/>
+            homologado por Ten-Cel Rogerio Cabral Camargo<br/>
+            Desenvolvido e Implantado pela Sessão de T.I. - Sup Tec Com Corp-CBPM
+          </Text>
       </VStack>
     </Container>
+    
   );
 };
 
