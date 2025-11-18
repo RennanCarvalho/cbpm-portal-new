@@ -30,12 +30,12 @@ const Header = () => {
       <Box
         w={'100%'}
         h="30px"
-        display={'flex'}
+        display={{ base: 'flex', lg: 'none' }}
         justifyContent={'center'}
         alignItems={'center'}
         background={'#000'}
         boxSizing="border-box"
-        hidden={useBreakpointValue({ base: false, lg: true })}
+        // hidden={useBreakpointValue({ base: false, lg: true })}
       >
         <Img src="/logos/logo-gov-branco.png" w="90px" h="12px" />
       </Box>
@@ -44,15 +44,15 @@ const Header = () => {
           w="100%"
           p={{ base: '20px', lg: '30px 52px' }}
           justifyContent="space-between"
-          flexDirection={useBreakpointValue({ base: 'column', lg: 'row' })}
-          alignItems={useBreakpointValue({ base: 'center', lg: 'center' })}
-          gap={useBreakpointValue({ base: 6, lg: 0 })}
+          flexDirection={{ base: 'column', lg: 'row' }}
+          alignItems={{ base: 'center', lg: 'center' }}
+          gap={{ base: 6, lg: 0 }}
         >
           <HStack
             spacing={{ base: 4, lg: 6 }}
             alignItems="center"
             justifyContent="center"
-            flexDirection={useBreakpointValue({ base: 'column', lg: 'row' })}
+            flexDirection={{ base: 'column', lg: 'row' }}
           >
             <Link
               href={`${
@@ -76,7 +76,9 @@ const Header = () => {
               textAlign={{ base: 'center', lg: 'left' }}
             >
               Caixa Beneficente da
-              <br hidden={useBreakpointValue({ base: true, lg: false })} />
+
+              <Box display={{ base: 'none', lg: 'block' }} h={'0'} w={'0'}><br /></Box>
+
               <strong> Polícia Militar do Estado de São Paulo</strong>
             </Text>
           </HStack>
@@ -89,7 +91,8 @@ const Header = () => {
             objectFit="contain"
             p={'0 20px'}
             pt={{ base: 4, lg: 0 }}
-            hidden={useBreakpointValue({ base: true, lg: false })}
+            display={{ base: 'none', lg: 'inline-block' }}
+
           />
         </HStack>
 

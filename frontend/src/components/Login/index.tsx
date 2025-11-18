@@ -25,7 +25,7 @@ const LoginComponent = () => {
       bgPosition="top right"
     >
       <Heading
-        fontSize={{ base: 'xl', sm: '2xl', md: '3xl' }}
+        fontSize={'17px'}
         as="h1"
         textDecor="underline"
         textAlign="center"
@@ -80,12 +80,12 @@ const LoginComponent = () => {
         bg={'blue.default'}
         color={'white.default'}
         p={'20px'}
-        mt={'50px'}
+        mt={'100px'}
         width={'100%'}
         gap={'10px'}
         alignItems={'left'}
         >
-          <Text textAlign={'center'}><strong>© 2025 CBPM.SP.GOV.BR. Todos os direitos reservados.</strong></Text>
+          <Text fontWeight={'bold'}>© 2025 CBPM.SP.GOV.BR. Todos os direitos reservados.</Text>
           <Text>
             Portal de Serviços – Site Institucional CBPM – Versão nº {process.env.NEXT_PUBLIC_VERSION || '25.01.01-01'}<br/>
             Autorizado por Cel Mônica Puliti Dias Ferreira<br/>
