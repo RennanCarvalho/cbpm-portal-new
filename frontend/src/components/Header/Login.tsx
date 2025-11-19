@@ -64,7 +64,7 @@ export const Login = () => {
           </Link>
         </HStack>
 
-        
+
 
         {/* {!isLogged && !isWideVersion && (
           <HStack>
