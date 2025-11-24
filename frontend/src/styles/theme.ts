@@ -49,7 +49,7 @@ export const theme = extendTheme({
         color: 'black.default',
       },
 
-      'button, a, input, textarea': {
+      'button, a, textarea': {
         cursor: 'pointer',
       },
 
