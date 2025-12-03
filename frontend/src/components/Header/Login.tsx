@@ -17,7 +17,7 @@ import { Divisor } from '../Login/Divisor';
 export const Login = () => {
   const { asPath } = useRouter();
   const [isLogged, setIsLogged] = useState<string>();
-
+  const isLoggedBool = isLogged === "true";
   const isWideVersion = useBreakpointValue({
     base: false,
     sm: true,
@@ -42,21 +42,21 @@ export const Login = () => {
         <Divisor texto="Portal do Cliente" isHorizontal={true} />
 
         <HStack>
-          <Link href={"/area-restrita/servicos"} p={'10px'} hidden={!isLogged}>
+          <Link href={"/area-restrita/servicos"} p={'10px'} hidden={!isLoggedBool}>
             <HStack>
               <Icon as={FaUser} color="blue.default" />
               <Text>Início</Text>
             </HStack>
           </Link>
 
-          <Link href={process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'} p={'10px'} hidden={isLogged}>
+          <Link href={process.env.NEXT_PUBLIC_HOME || 'https://www.cbpm.sp.gov.br/'} p={'10px'} hidden={isLoggedBool}>
             <HStack>
               <Icon as={FaLink} color="blue.default" />
               <Text>Voltar para Área Pública</Text>
             </HStack>
           </Link>
 
-          <Link href={"/login"} p={'10px'} hidden={!isLogged}>
+          <Link href={"/login"} p={'10px'} hidden={!isLoggedBool}>
             <HStack>
               <Icon as={FaSignOutAlt} color="blue.default" />
               <Text>Sair</Text>

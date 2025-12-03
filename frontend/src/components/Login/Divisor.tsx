@@ -21,7 +21,7 @@ export const Divisor = ({
       justify="center"
       color="gray"
       gap="10px"
-      minWidth={isHorizontal ? '500px' : '100px'}
+      minWidth={isHorizontal ? '250px' : '100px'}
       minHeight={isHorizontal ? '100px' : '100%'}
       height='-webkit-fill-available'
     >
