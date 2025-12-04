@@ -17,7 +17,8 @@ import { Divisor } from '../Login/Divisor';
 export const Login = () => {
   const { asPath } = useRouter();
   const [isLogged, setIsLogged] = useState<string>();
-  const isLoggedBool = isLogged === "true";
+  const isLoggedBool = !!isLogged;
+  console.log(isLogged)
   const isWideVersion = useBreakpointValue({
     base: false,
     sm: true,
